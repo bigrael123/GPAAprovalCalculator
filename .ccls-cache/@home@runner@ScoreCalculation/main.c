@@ -35,15 +35,16 @@ bool IsApproved(float average){
     }
   }
 }
+//prints results
 int main(void) {
-  float SGrades1 = getgrades(false);
-  float SGrades2 = getgrades(true);
-  float Saverage = getaverage(SGrades1, SGrades2);
-  if(IsApproved(Saverage)){
+  float SGrades1 = getgrades(false); //get first grade by running the function with false(Did not get first grade)
+  float SGrades2 = getgrades(true); //get second grade by running the function with true(already has the first grade)
+  float Saverage = getaverage(SGrades1, SGrades2);//calculates the average grade
+  if(IsApproved(Saverage)){ //gets the average and if approved displays text
     printf("You have been approved with GPA of %f", Saverage);
   }
   else{
-    if(!IsApproved(Saverage))
+    if(!IsApproved(Saverage))//gets the average and if reproved displays text
        printf("You have been reproved with GPA of %f", Saverage);
   }
   return 0;
