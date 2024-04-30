@@ -43,7 +43,9 @@ int main(void) {
   }
   else{
     if(!IsApproved(Saverage))//gets the average and if reproved displays text
-       printf("You have been reproved with GPA of %g", Saverage);
+     printf("You have been reproved with GPA of %g", Saverage);
+
+
   }
   return 0;
 }
