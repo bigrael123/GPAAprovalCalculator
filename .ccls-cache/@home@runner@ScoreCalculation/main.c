@@ -29,9 +29,9 @@ int main(void) {
   float SWeight[GottenNumberofGrades]; //Will hold the value of the weight of each score
   float TWeight = 0; //This will hold the value of each weight into one number
   for(int i = 0; i<GottenNumberofGrades; i++){ // for loop get input data from the user and combines them on the score
-    printf("Type your %d grade: ", i+1);
+    printf("Type your %d grade from 0-100: ", i+1);
     scanf("%f", &SGrades[i]);
-    printf("What's the weight of grade %d: ", i+1);
+    printf("What's the weight of grade %d from 0-100: ", i+1);
     scanf("%f", &SWeight[i]);
     Score += (SWeight[i]/100)*SGrades[i]; //gets grades and puts its value on one number
   }
