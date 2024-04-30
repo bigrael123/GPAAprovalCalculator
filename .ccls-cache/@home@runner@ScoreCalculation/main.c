@@ -39,11 +39,11 @@ int main(void) {
   }
   float Saverage = getaverage(Score, GottenNumberofGrades);//calculates the average grade by dividing the total Grades combined by the number of scores
   if(IsApproved(Saverage)){ //gets the average and if approved displays text
-    printf("You have been approved with GPA of %f", Saverage);
+    printf("You have been approved with GPA of %g", Saverage);
   }
   else{
     if(!IsApproved(Saverage))//gets the average and if reproved displays text
-       printf("You have been reproved with GPA of %f", Saverage);
+       printf("You have been reproved with GPA of %g", Saverage);
   }
   return 0;
 }
